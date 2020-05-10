@@ -1,0 +1,108 @@
+*{
+  box-sizing: border-box;
+}
+
+body{
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.header{
+  padding:20px;
+  text-align:center;
+  background:#1abc9c;
+}
+
+.header img{
+  height:auto;
+}
+
+/* style top navigation bar */
+.navbar{
+	overflow:hidden;
+	background-color: #333;
+	height:50px;
+}
+
+.navbar a{
+	font-weight: bold;
+	float: left;
+	display:block;
+	color:white;
+	text-align: center;
+	padding: 15px 20px;
+}
+
+.navbar img{
+	float: left;
+	margin-left: 10px;
+}
+		
+/* Change color on hover */
+.navbar a:hover {
+  background-color: #DCDCDC;
+  color: black;
+}
+			
+/* row for pic and about */
+.row {
+ 	width:100%;
+  overflow-x: hidden;
+  background-color: #E0FFFF;
+  padding:20px;
+  display: table;
+}
+
+/* left side, picture*/
+.left{
+  width:50%;
+  float:left;
+  height:750px;
+}
+
+/*right side, about */
+.right{
+  width:50%;
+  float:right;
+  height:750px;
+
+}
+
+/* other friends */
+.scrollmenu{
+  width: 100%;
+  height:200px;
+  background-color: #E0FFFF;
+  overflow: auto;
+  white-space: nowrap;
+  margin-top:-20px;
+}
+
+.scrollmenu .more{
+  display:inline-block;
+}
+
+.scrollmenu img{
+  padding:20px;
+  width:230px;
+  height:170px;
+}
+
+.furry{
+  background-color: #E0FFFF; 
+  text-align: center;
+}
+
+/* Responsive layout - when the screen is less than 700px wide, make the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 700px) {
+  .row {   
+    flex-direction: column;
+  }
+}
+
+/* Responsive layout - when the screen is less than 400px wide, make the navigation links stack on top of each other instead of next to each other */
+@media screen and (max-width: 400px) {
+  .navbar a {
+    float: none;
+    width: 100%;
+  }
+}
